@@ -25,7 +25,6 @@ export async function getExposes (genesis: Genesis) {
   } catch (error) {
     console.error(new Error('get exposes failed'))
   }
-  process.exit(0)
 }
 
 /**

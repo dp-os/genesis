@@ -15,6 +15,7 @@ export function cli () {
     const genesis = new Genesis(options)
     switch (type) {
       case 'dev':
+        await getExposes(genesis)
         genesis.app = await createDevApp(genesis)
         created(genesis)
         break
