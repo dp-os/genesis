@@ -17,6 +17,7 @@ export function mergeViteConfig (genesis: Genesis, config: InlineConfig, isNode 
     if (Array.isArray(federation.remotes)) {
       for (const { name } of federation.remotes) {
         remotes[name] = path.resolve(genesis.root, `node_modules/${name}/client/assets/remote-entry.js`)
+        // remotes[name] = path.resolve(genesis.root, `node_modules/${name}/server/assets/remote-entry.js`)
       }
     }
     plugins.push(viteFederation({

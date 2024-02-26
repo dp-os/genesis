@@ -1,28 +1,11 @@
 <template>
     <div class="app">
-        <button class="btn" @click="click">Click me</button>
-        <!-- <AsyncHeader /> -->
+        这里是 ssr-vue3-host
         <Header />
-        <Button />
-        Hello World!{{ count }}
     </div>
 </template>
 <script setup lang="ts">
-// import { defineAsyncComponent }  from 'vue';
-
-import { ref } from 'vue'
-import { getWord } from './utils'
-
-import Button from './common-button.vue'
 import Header from './common-header.vue'
-// const AsyncHeader = defineAsyncComponent(async () => import('./common-header.vue'));
-
-const count = ref(0);
-
-function click () {
-    console.log(getWord('click'));
-    count.value++;
-}
 
 </script>
 <style scoped>
