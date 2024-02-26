@@ -1,9 +1,9 @@
 import { defineNode, createServer } from 'genesis3'
 
 export default defineNode({
-  name: 'ssr-vue3-remote2',
+  name: 'ssr-vue3-host',
   federation: {
-    exposes: ['src/common-button.vue', 'src/utils.ts'],
+    // exposes: ['src/common-button.vue', 'src/utils.ts'],
     remotes: [
       {
         name: 'ssr-vue3-remote',

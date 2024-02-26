@@ -11,7 +11,8 @@ import { defineAsyncComponent }  from 'vue';
 import { ref } from 'vue'
 import { getWord } from './utils'
 
-import Button from './common-button.vue'
+// import Button from './common-button.vue'
+const Button = defineAsyncComponent(async () => import('./common-button.vue'));
 const AsyncHeader = defineAsyncComponent(async () => import('./common-header.vue'));
 
 const count = ref(0);
