@@ -1,19 +1,20 @@
 <template>
     <div class="app">
         <button class="btn" @click="click">Click me</button>
-    <AsyncHeader />
+    <Header />
     <Button />
     Hello World!{{ count }}</div>
 </template>
 <script setup lang="ts">
-import { defineAsyncComponent }  from 'vue';
-
 import { ref } from 'vue'
-import { getWord } from './utils'
 
-// import Button from './common-button.vue'
-const Button = defineAsyncComponent(async () => import('./common-button.vue'));
-const AsyncHeader = defineAsyncComponent(async () => import('./common-header.vue'));
+// import { defineAsyncComponent }  from 'vue';
+// const Button = defineAsyncComponent(async () => import('./common-button.vue'));
+// const Header = defineAsyncComponent(async () => import('./common-header.vue'));
+
+import Button from './common-button.vue'
+import Header from './common-header.vue'
+import { getWord } from './utils'
 
 const count = ref(0);
 
