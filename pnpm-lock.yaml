@@ -182,7 +182,7 @@ importers:
         specifier: ^3.3.4
         version: 3.3.8(typescript@5.2.2)
 
-  examples/ssr-vue3-remote:
+  examples/ssr-vue3-host:
     dependencies:
       express:
         specifier: 4.18.2
@@ -213,7 +213,7 @@ importers:
         specifier: ^3.3.4
         version: 3.3.8(typescript@5.2.2)
 
-  examples/ssr-vue3-remote2:
+  examples/ssr-vue3-remote:
     dependencies:
       express:
         specifier: 4.18.2
